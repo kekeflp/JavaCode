@@ -1,0 +1,15 @@
+<!--指定运行方法(测试用例)-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="测试套件" verbose="1">
+    <test name="简单测试">
+        <classes>
+            <class name="FixtureTest">
+                <methods>
+                    <include name="testCase2"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>

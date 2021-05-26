@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="测试套件">
+    <test name="简单测试" preserve-order="true">
+        <classes>
+            <class name="CaseRunTest">
+                <methods>
+                    <include name="testCase3" />
+                    <include name="testCase1" />
+                    <include name="testCase2" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+<!-- preserve-order 参数用于控制测试用例的执行顺序。如果为：true，
+测试用例的顺序为：testCase > testCase1 > testCase2。如果为:false ，
+那么默认会按照用例的名称的有字母/数字的顺序执行：testCase1 > testCase2 > testCase3。
+不设置的情况下默认为 true 。
+-->

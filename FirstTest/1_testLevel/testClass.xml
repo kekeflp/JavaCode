@@ -1,0 +1,10 @@
+<!--指定运行测试类-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="测试套件" verbose="1">
+    <test name="简单测试">
+        <classes>
+            <class name="FirstTest"/>
+            <class name="FixtureTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--入参(测试数据)设置-->
+<suite name="测试套件">
+    <test name="简单测试">
+        <parameter name="add1" value="3"/>
+        <parameter name="add2" value="2"/>
+        <parameter name="result" value="5"/>
+        <classes>
+            <class name="DataProviderTest"/>
+        </classes>
+    </test>
+</suite>

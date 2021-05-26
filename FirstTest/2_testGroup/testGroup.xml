@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="测试套件" verbose="1">
+    <test name="简单测试">
+        <groups>
+            <run>
+                <exclude name="异常"/>
+                <!-- 排除不执行的测试用例 -->
+                <include name="高"/>
+                <!-- 指定执行的测试用例 -->
+                <!--因为这个"功能测试"的标签在类上面,所有都该类下面的方法都能被测试到;开启这个时,要注释掉上面2个条件 -->
+                <!--<include name="功能测试"/> -->
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TagTest"/>
+        </classes>
+    </test>
+</suite>
+
+
+<!-- 多种组合方式, 如下面这种,就是测试"功能测试"类下面的所有被注解为 "高" 的用例-->
+<!--
+<groups>
+    <run>
+        <include name="功能测试"/>
+        <include name="高"/>
+    </run>
+</groups>
+-->

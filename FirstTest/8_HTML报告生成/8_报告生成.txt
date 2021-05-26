@@ -1,0 +1,6 @@
+1.如果是maven项目,则直接在程序的根目录使用mvn test命令,自动生成报告到target目录下;
+
+2.如果是 IntelliJ IDEA普通项目:
+  在 IntelliJ IDEA 中默认运行测试用例是不会生成HTML报告的，需要进行简单的配置。
+  菜单栏： “Run” –>“Edit Configuraction…” 。
+  选择运行测试用例的 testng.xml 文件–>“Configuration”–>“Listeners”–> 勾选“Use default reporters” 选项， 最后点击“OK” 按钮， 完成设置。

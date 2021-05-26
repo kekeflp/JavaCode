@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="测试套件">
+    <test name="简单测试" preserve-order="true">
+        <classes>
+            <class name="com.example.test.CaseRunTest">
+                <methods>
+                    <include name="testCase3" />
+                    <include name="testCase1" />
+                    <include name="testCase2" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

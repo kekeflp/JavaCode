@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <suite>...</suite> 表示定义了的一个测试套件 -->
+<!-- verbose 定义命令行信息打印等级，不会影响测试报告输出内容；可选值(1|2|3|4|5) -->
+<suite name="测试套件" verbose="1">
+
+    <!-- <test>...</test> 表示定义了一个测试。  -->
+    <test name="简单测试">
+
+        <!-- <classes>...</classes> 表示定义一组测试类。 -->
+        <classes>
+            <!-- <class name="test.java.FirstTest"/> -->
+            <class name="FirstTest"/>
+            <class name="FixtureTest"/>
+        </classes>
+    </test>
+</suite>
